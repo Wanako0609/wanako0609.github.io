@@ -2,43 +2,43 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Wanako Blog</title>
-    <link>https://wanako0609.github.io/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Wanako Blog</description>
     <image>
       <title>Wanako Blog</title>
-      <url>https://wanako0609.github.io/images/avatar.jpg</url>
-      <link>https://wanako0609.github.io/images/avatar.jpg</link>
+      <url>http://localhost:1313/images/avatar.jpg</url>
+      <link>http://localhost:1313/images/avatar.jpg</link>
     </image>
     <generator>Hugo -- 0.147.6</generator>
     <language>en</language>
     <lastBuildDate>Wed, 28 May 2025 16:25:48 +0200</lastBuildDate>
-    <atom:link href="https://wanako0609.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hardware</title>
-      <link>https://wanako0609.github.io/tags/hardware/</link>
+      <link>http://localhost:1313/tags/hardware/</link>
       <pubDate>Wed, 28 May 2025 16:25:48 +0200</pubDate>
-      <guid>https://wanako0609.github.io/tags/hardware/</guid>
+      <guid>http://localhost:1313/tags/hardware/</guid>
       <description></description>
     </item>
     <item>
       <title>Reseau</title>
-      <link>https://wanako0609.github.io/tags/reseau/</link>
+      <link>http://localhost:1313/tags/reseau/</link>
       <pubDate>Wed, 28 May 2025 16:25:48 +0200</pubDate>
-      <guid>https://wanako0609.github.io/tags/reseau/</guid>
+      <guid>http://localhost:1313/tags/reseau/</guid>
       <description></description>
     </item>
     <item>
       <title>Reverse</title>
-      <link>https://wanako0609.github.io/tags/reverse/</link>
+      <link>http://localhost:1313/tags/reverse/</link>
       <pubDate>Wed, 28 May 2025 16:25:48 +0200</pubDate>
-      <guid>https://wanako0609.github.io/tags/reverse/</guid>
+      <guid>http://localhost:1313/tags/reverse/</guid>
       <description></description>
     </item>
     <item>
       <title>Programmation</title>
-      <link>https://wanako0609.github.io/tags/programmation/</link>
+      <link>http://localhost:1313/tags/programmation/</link>
       <pubDate>Wed, 21 May 2025 11:49:29 +0200</pubDate>
-      <guid>https://wanako0609.github.io/tags/programmation/</guid>
+      <guid>http://localhost:1313/tags/programmation/</guid>
       <description></description>
     </item>
   </channel>

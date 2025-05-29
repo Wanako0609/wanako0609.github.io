@@ -156,4 +156,28 @@ Le coffre se trouve sur la table des admins, et le flag final se trouve à l’i
 Pour la partie 3 nous allons donc devoir modifier une carte NFC qui nous a été fournie dans le but d'ouvrir le coffre.
 
 Pour ce faire nous utilisons l'application `mifare classic tool`.
+Lancer l’application et choisir lire Tag
+Depuis le menu principal de l'app, choisissez l'option "Lire Tag”.  
 
+![Mifare Tool Menu](mifaretoolmenu.png)
+Une fois détectée, l'application affiche tous les secteurs de la carte.  
+Tous sont vides sauf le secteur 0, qui contient l’UID (normal, c’est un secteur non modifiable).
+
+![Secteur Vide](Secteur_vide.png)
+
+Le firmware attend une valeur spécifique dans le secteur 1, bloc 4.
+Grâce à l’analyse faite dans la partie précédente, nous savons que la valeur attendue est la chaîne : `rickroll`  
+On l’écrit donc en hexadécimal dans le secteur 1 via l’interface de l’application :  
+
+![Secteur 1 modifier](secteur1.png)
+
+Une fois les données modifiées, ouvrez le menu ... en haut à droite, puis sélectionnez “Write Dump”.  
+L’application va alors écrire les données modifiées sur la carte NFC.  
+
+![Ecrire dump](ecrire_dump.png)
+
+En posant cette carte sur le coffre-fort des admins, le système reconnaît la chaîne "rickroll" comme valide, et le coffre se déverrouille.
+
+Vous récupérez ainsi le flag final du challenge.
+
+![alt text](secte_castem.png)
