@@ -8,7 +8,7 @@ pagination:
 caches:
   images:
     dir: :cacheDir/images
-    
+
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
@@ -52,7 +52,7 @@ params:
     imageUrl: "/images/avatar.jpg"
     buttons:
       - name: Blog
-        url: "/posts"
+        url: "/blog"
       - name: Projets
         url: "/projets"
 
@@ -101,7 +101,7 @@ menu:
   main:
     - identifier: blog
       name: Blog
-      url: /posts/
+      url: /blog/
       weight: 1
     - identifier: projets
       name: Projets
