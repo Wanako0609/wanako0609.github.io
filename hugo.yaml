@@ -5,6 +5,10 @@ theme: PaperMod
 pagination:
   pagerSize: 5
 
+caches:
+  images:
+    dir: :cacheDir/images
+    
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
