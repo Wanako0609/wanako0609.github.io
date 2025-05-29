@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Programmation on Wanako Blog</title>
-    <link>http://localhost:1313/categories/programmation/</link>
+    <link>https://wanako0609.github.io/categories/programmation/</link>
     <description>Recent content in Programmation on Wanako Blog</description>
     <image>
       <title>Wanako Blog</title>
-      <url>http://localhost:1313/images/avatar.jpg</url>
-      <link>http://localhost:1313/images/avatar.jpg</link>
+      <url>https://wanako0609.github.io/images/avatar.jpg</url>
+      <link>https://wanako0609.github.io/images/avatar.jpg</link>
     </image>
     <generator>Hugo -- 0.147.6</generator>
     <language>en</language>
     <lastBuildDate>Wed, 21 May 2025 11:49:29 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/programmation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wanako0609.github.io/categories/programmation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>France Assembleur</title>
-      <link>http://localhost:1313/projets/frasm/</link>
+      <link>https://wanako0609.github.io/projets/frasm/</link>
       <pubDate>Wed, 21 May 2025 11:49:29 +0200</pubDate>
-      <guid>http://localhost:1313/projets/frasm/</guid>
+      <guid>https://wanako0609.github.io/projets/frasm/</guid>
       <description>&lt;h1 id=&#34;frasm&#34;&gt;FRASM&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;FRASM&lt;/strong&gt; (abréviation de &lt;em&gt;France Assembleur&lt;/em&gt;) est un langage de programmation de type assembleur, minimaliste et entièrement en français. Il est conçu pour être simple, lisible, et exécuté à l’aide d’une machine virtuelle en Python.&lt;/p&gt;
 &lt;hr&gt;
