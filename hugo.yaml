@@ -3,7 +3,7 @@ title: 'Wanako Blog'
 theme: PaperMod
 
 pagination:
-  pagerSize: 5
+  pagerSize: 10
 
 caches:
   images:
