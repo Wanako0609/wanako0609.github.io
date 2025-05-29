@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Wanako Blog</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Wanako Blog</description>
+    <image>
+      <title>Wanako Blog</title>
+      <url>http://localhost:1313/images/avatar.jpg</url>
+      <link>http://localhost:1313/images/avatar.jpg</link>
+    </image>
+    <generator>Hugo -- 0.147.6</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 29 May 2025 15:18:44 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Thu, 29 May 2025 15:18:44 +0200</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;h1 id=&#34;me-contacter&#34;&gt;Me contacter&lt;/h1&gt;
+&lt;p&gt;Je suis ouvert aux échanges, collaborations, ou simplement discuter cybersécurité et CTFs !&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📧 &lt;strong&gt;Email&lt;/strong&gt; : &lt;a href=&#34;mailto:wanakokan@gmail.com&#34;&gt;wanakokan@gmail.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🐙 &lt;strong&gt;GitHub&lt;/strong&gt; : &lt;a href=&#34;https://github.com/Wanako0609&#34;&gt;Wanako0609&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;👔 &lt;strong&gt;LinkedIn&lt;/strong&gt; : &lt;a href=&#34;https://www.linkedin.com/in/wyatt-mbida-3a4b00285&#34;&gt;Wyatt Mbida&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🧠 &lt;strong&gt;Root-Me&lt;/strong&gt; : &lt;a href=&#34;https://www.root-me.org/Wanako&#34;&gt;Mon profil&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;💬 &lt;strong&gt;Discord&lt;/strong&gt; : &lt;code&gt;wanako&lt;/code&gt; ou &lt;a href=&#34;https://discord.gg/QeyFCZvJQ2&#34;&gt;serveur&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Tu peux aussi me retrouver dans divers événements CTF ou sur des plateformes techniques !&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>InterIUT - ESPionnage</title>
+      <link>http://localhost:1313/posts/espionnage/</link>
+      <pubDate>Wed, 28 May 2025 16:25:48 +0200</pubDate>
+      <guid>http://localhost:1313/posts/espionnage/</guid>
+      <description>Write Up du challenge ESPionnage du CTF InterIUT 2025</description>
+    </item>
+    <item>
+      <title>France Assembleur</title>
+      <link>http://localhost:1313/projets/frasm/</link>
+      <pubDate>Wed, 21 May 2025 11:49:29 +0200</pubDate>
+      <guid>http://localhost:1313/projets/frasm/</guid>
+      <description>&lt;h1 id=&#34;frasm&#34;&gt;FRASM&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;FRASM&lt;/strong&gt; (abréviation de &lt;em&gt;France Assembleur&lt;/em&gt;) est un langage de programmation de type assembleur, minimaliste et entièrement en français. Il est conçu pour être simple, lisible, et exécuté à l’aide d’une machine virtuelle en Python.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;objectif&#34;&gt;Objectif&lt;/h2&gt;
+&lt;h3 id=&#34;objectif-personnel&#34;&gt;Objectif personnel&lt;/h3&gt;
+&lt;p&gt;Créer un langage simple pour apprendre et comprendre :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;la création d’un langage interprété&lt;/li&gt;
+&lt;li&gt;la gestion des variables, des instructions, des sauts et des conditions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;objectif-du-langage&#34;&gt;Objectif du langage&lt;/h3&gt;
+&lt;p&gt;Créer un langage éducatif, accessible à un large public, en brisant la barrière de la langue.
+Il s’agit d’une mise en œuvre simple et logique des opérations de base, proche du pseudocode.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

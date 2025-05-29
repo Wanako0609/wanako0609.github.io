@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Reseau on Wanako Blog</title>
+    <link>http://localhost:1313/tags/reseau/</link>
+    <description>Recent content in Reseau on Wanako Blog</description>
+    <image>
+      <title>Wanako Blog</title>
+      <url>http://localhost:1313/images/avatar.jpg</url>
+      <link>http://localhost:1313/images/avatar.jpg</link>
+    </image>
+    <generator>Hugo -- 0.147.6</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 28 May 2025 16:25:48 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/reseau/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ESPionnage</title>
+      <link>http://localhost:1313/posts/espionnage/</link>
+      <pubDate>Wed, 28 May 2025 16:25:48 +0200</pubDate>
+      <guid>http://localhost:1313/posts/espionnage/</guid>
+      <description>&lt;h1 id=&#34;write-up-espionnage-by-philippe-katerine&#34;&gt;Write Up ESPionnage by Philippe Katerine&lt;/h1&gt;
+&lt;p&gt;Voici un Write Up des challenges &lt;code&gt;ESPionnage&lt;/code&gt; réaliser par Philippe Katerine dans le cadre du ctf &lt;code&gt;interiut 2025&lt;/code&gt;.&lt;br&gt;
+Catégorie: Hardware&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;ennoncer-partie-1&#34;&gt;Ennoncer Partie 1&lt;/h2&gt;
+&lt;p&gt;Ce challenge se déroule en trois étapes. Le but final étant d’accéder au contenu d&amp;rsquo;un coffre-fort connecté situé sur la table des Admins. Chaque étape se débloque en résolvant la précédente.&lt;/p&gt;
+&lt;p&gt;Pour cette première phase, vous interceptez une transmission sur le réseau sans fil de la secte CASTEM lors de l&amp;rsquo;OTA du coffre. Une capture réseau de cette transmission ainsi qu&amp;rsquo;une documentation sur le coffre sont à télécharger. À vous de l’analyser pour récupérer le firmware embarqué du système de verrouillage.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

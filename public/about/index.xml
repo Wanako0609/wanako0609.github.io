@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Abouts on Wanako Blog</title>
+    <link>http://localhost:1313/about/</link>
+    <description>Recent content in Abouts on Wanako Blog</description>
+    <image>
+      <title>Wanako Blog</title>
+      <url>http://localhost:1313/images/avatar.jpg</url>
+      <link>http://localhost:1313/images/avatar.jpg</link>
+    </image>
+    <generator>Hugo -- 0.147.6</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 29 May 2025 15:18:44 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/about/about/</link>
+      <pubDate>Thu, 29 May 2025 15:18:44 +0200</pubDate>
+      <guid>http://localhost:1313/about/about/</guid>
+      <description>&lt;h1 id=&#34;me-contacter&#34;&gt;Me contacter&lt;/h1&gt;
+&lt;p&gt;Je suis ouvert aux échanges, collaborations, ou simplement discuter cybersécurité et CTFs !&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📧 &lt;strong&gt;Email&lt;/strong&gt; : &lt;a href=&#34;mailto:wanakokan@gmail.com&#34;&gt;wanakokan@gmail.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🐙 &lt;strong&gt;GitHub&lt;/strong&gt; : &lt;a href=&#34;https://github.com/Wanako0609&#34;&gt;Wanako0609&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;👔 &lt;strong&gt;LinkedIn&lt;/strong&gt; : &lt;a href=&#34;https://www.linkedin.com/in/wyatt-mbida-3a4b00285&#34;&gt;Wyatt Mbida&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🧠 &lt;strong&gt;Root-Me&lt;/strong&gt; : &lt;a href=&#34;https://www.root-me.org/Wanako&#34;&gt;Mon profil&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;💬 &lt;strong&gt;Discord&lt;/strong&gt; : &lt;code&gt;wanako&lt;/code&gt; ou &lt;a href=&#34;https://discord.gg/QeyFCZvJQ2&#34;&gt;serveur&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Tu peux aussi me retrouver dans divers événements CTF ou sur des plateformes techniques !&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
