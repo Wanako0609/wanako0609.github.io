@@ -49,7 +49,7 @@ params:
     enabled: true
     title: "Wanako"
     subtitle: "Chill développeur et Joueur de CTF"
-    imageUrl: "/images/avatar2.png"
+    imageUrl: "/images/avatar.png"
     buttons:
       - name: Blog
         url: "/posts"
@@ -65,7 +65,7 @@ params:
 
   label:
     text: "Wanako Blog"
-    icon: "/images/avatar2.png"
+    icon: "/images/avatar.png"
     iconHeight: 35
 
   homeInfoParams:
