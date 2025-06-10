@@ -1,20 +1,20 @@
 +++ 
 draft = false
 date = '2025-05-28T16:25:48+02:00'
-title = "InterIUT - ESPionnage"
+title = "CTF InterIUT - ESPionnage"
 description = "Write Up du challenge ESPionnage du CTF InterIUT 2025"
 authors = "Wanako"
 tags = ["Hardware", "Reseau", "Reverse"]
 categories = ["Hardware", "Reseau", "Reverse"]
 +++
-Voici un Write Up des challenges `ESPionnage` réaliser par Philippe_Katerine dans le cadre du ctf `interiut 2025`.  
+Voici un write-up des challenges `ESPionnage` réalisé par Philippe_Katerine dans le cadre du CTF `Interiut 2025`.  
 Catégorie: Hardware
 
 ---
-## Ennoncer Partie 1
+## Ennoncé Partie 1
 Ce challenge se déroule en trois étapes. Le but final étant d’accéder au contenu d'un coffre-fort connecté situé sur la table des Admins. Chaque étape se débloque en résolvant la précédente.
 
-Pour cette première phase, vous interceptez une transmission sur le réseau sans fil de la secte CASTEM lors de l'OTA du coffre. Une capture réseau de cette transmission ainsi qu'une documentation sur le coffre sont à télécharger. À vous de l’analyser pour récupérer le firmware embarqué du système de verrouillage.
+Pour cette première phase, vous interceptez une transmission sur le réseau sans fil de la secte CASTEM lors de l'OTA du coffre. Une capture réseau de cette transmission, ainsi qu'une documentation sur le coffre, sont disponibles au téléchargement. À vous de l’analyser pour récupérer le firmware embarqué du système de verrouillage.
 
 Le flag de ce premier challenge est le hash sha256 du binaire. 
 
@@ -29,34 +29,34 @@ Fichier disponible : ota.pcapng et doc.pdf
 Le document présente le contexte ainsi que les différents équipements avec lesquels nous interagirons.
 
 ### Analyse de la capture réseaux
-La capture réseau est courte, ça nous permet de nous concentrer sur beaucoup d'element.  
+La capture réseau est courte, ce qui nous permet de nous concentrer sur plusieurs d'elements.  
 ![capture reseaux image](ota_capture.png)
   
-Résumer des informations importante :
+Résumé des informations importantes :
 - Les quetes DNS pointent vers `eddymalou.fr` -> `45.147.99.180`.  
 - 2 Requete GET sur `eddymalou.fr/firmware.elf`
-  - Une rejecter car non connecter (mauvais cookie)
+  - Une rejectée car non connectée (mauvais cookie)
   - Une autre autorisé
   - Pas de possibilité de récuperer le firmware telechargé
-- Différent message avec le protocole MQTT
+- Différents messages avec le protocole MQTT
 
 ### Résolution
-Dans le but d'avoir nous aussi accès au firmware, nous devons generer un bon cookie utilisable sur le site. 
-Via la capture, nous comprennons que nous devrons utiliser le protocole MQTT pour réussir à avoir un cookie valable.  
+Dans le but d'accéder nous aussi accès au firmware, nous devons generer un bon cookie utilisable sur le site. 
+Via la capture, nous comprenons que nous devrons utiliser le protocole MQTT pour réussir à avoir un cookie valable.  
 
 ##### MQTT ?
 Le protocole **MQTT** (Message Queuing Telemetry Transport) est un protocole de messagerie léger basé sur le modèle publish/subscribe. Il est conçu pour permettre la communication entre des appareils sur des réseaux à faible bande passante ou peu fiables, comme dans les systèmes IoT. Un broker central reçoit les messages publiés sur des "topics" par des clients (publishers) et les distribue aux clients abonnés (subscribers).
-Dans notre cas le serveur sera le même que celui utiliser dans capture soit `45.147.99.180`. Celui nous renverra un token utilisable ensuite sur le site internet.  
+Dans notre cas le serveur sera le même que celui utiliser dans capture soit `45.147.99.180`. Celui-ci nous renverra un token utilisable ensuite sur le site internet.  
 
 ![mqtt_detail1](mqtt_description1.png)
 ![mqtt_detail2](mqtt_description2.png)
 
-En ce qui concerne les login et password on peut les voir dans la trame 5.
+En ce qui concerne les identifiants de connexion, on peut les voir dans la trame 5.
 
 ![information_connnextion](mqtt_conn.png)
 
 Maintenant que c'est tout bon, c'est parti !  
-Voici un packet permettant de faire des requetes MQTT.
+Voici une commande permettant de faire des requetes MQTT.
 ```bash
 sudo apt install mosquitto-clients
 mosquitto_sub -h 45.147.99.180 -p 1883 -u "iotcastem" -P "tungtungsahur" -t "#"
@@ -70,12 +70,12 @@ Rapide explication
 -t topic (# = tout les topics, on pourrait mettre /auth_token)
 ```
 ![Commande mosquitto](commande_mosquitto.png)
-Et tout fonctionne bien, on utilise le cookie reçu pour recuperer le firmware sur la page.  
+Une fois le cookie obtenu, on peut l’utiliser pour récupérer le firmware
 
-(Je suis passé par une extension dans le nagivateur pour modifier le cookie)
+(Je suis passé par une extension dans le navigateur pour modifier le cookie)
 ![Cookie modification](cookie_modification.png)
 
-Pour finir pour avoir le flag, on mets simplement au format.
+Pour finir pour avoir le flag, on le formate simplement comme suit :
 ```bash
 sha256sum firmware.elf
 23b5141d81e852b5683ddf10a8e8036dd20c5675b4547d4ba44e4407343e50d1  firmware.elf
@@ -83,7 +83,7 @@ sha256sum firmware.elf
 Flag : `interiut{23b5141d81e852b5683ddf10a8e8036dd20c5675b4547d4ba44e4407343e50d1}`
 
 --- 
-## Ennoncer Partie 2
+## Ennoncé Partie 2
 
 Vous avez mis la main sur le firmware du coffre-fort, bravo! CASTEM pensait sa technologie inviolable... mais c’est à vous de prouver le contraire.
 
@@ -129,7 +129,7 @@ else {
 
 Le firmware met aussi à jour un **statut d’accès** pour informer l’utilisateur visuellement du résultat.
 
-### Récuper la valeur de `expectedMifareData`
+### Récupérer la valeur de `expectedMifareData`
 
 Pour extraire la valeur de `expectedMifareData` dans Ghidra, il suffit d’utiliser la recherche de chaînes intégrée.
 Accédez à : **`Search` → `For Strings`** dans la barre de menu.
@@ -143,7 +143,7 @@ Flag : `interiut{rickroll}`
 
 ---
 
-## Ennoncer Partie 3
+## Ennoncé Partie 3
 
 Vous avez désormais en main la valeur autorisée par le firmware du coffre-fort. Mais posséder la connaissance ne suffit pas… il vous faut maintenant agir, comme le ferait un véritable initié de la secte.
 
@@ -156,7 +156,7 @@ Le coffre se trouve sur la table des admins, et le flag final se trouve à l’i
 Pour la partie 3 nous allons donc devoir modifier une carte NFC qui nous a été fournie dans le but d'ouvrir le coffre.
 
 Pour ce faire nous utilisons l'application `mifare classic tool`.
-Lancer l’application et choisir lire Tag
+Lancez l’application et choisir "Lire Tag"
 Depuis le menu principal de l'app, choisissez l'option "Lire Tag”.  
 
 ![Mifare Tool Menu](mifaretoolmenu.png)
@@ -171,7 +171,7 @@ On l’écrit donc en hexadécimal dans le secteur 1 via l’interface de l’ap
 
 ![Secteur 1 modifier](secteur1.png)
 
-Une fois les données modifiées, ouvrez le menu ... en haut à droite, puis sélectionnez “Write Dump”.  
+Une fois les données modifiées, ouvrez le menu « ⋮ » (trois points) en haut à droite, puis sélectionnez “Write Dump”.  
 L’application va alors écrire les données modifiées sur la carte NFC.  
 
 ![Ecrire dump](ecrire_dump.png)

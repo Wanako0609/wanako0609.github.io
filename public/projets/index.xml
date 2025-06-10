@@ -6,10 +6,10 @@
     <description>Recent content in Projets on Wanako Blog</description>
     <image>
       <title>Wanako Blog</title>
-      <url>http://localhost:1313/images/avatar.jpg</url>
-      <link>http://localhost:1313/images/avatar.jpg</link>
+      <url>http://localhost:1313/images/avatar.png</url>
+      <link>http://localhost:1313/images/avatar.png</link>
     </image>
-    <generator>Hugo -- 0.147.6</generator>
+    <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <lastBuildDate>Wed, 21 May 2025 11:49:29 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/projets/index.xml" rel="self" type="application/rss+xml" />

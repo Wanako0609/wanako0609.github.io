@@ -24,7 +24,7 @@ params:
   description: "Blog de Wanako sur la cybersécurité, les CTFs et projets personnels"
   keywords: ["CTF", "Cybersecurity", "Reverse", "Portfolio"]
   author: "Wanako Kanan"
-  images: ["/images/avatar.jpg"]
+  images: ["/images/avatar.png"]
   DateFormat: "2 January 2006"
   defaultTheme: auto
   disableThemeToggle: false
@@ -49,7 +49,7 @@ params:
     enabled: true
     title: "Wanako"
     subtitle: "Chill développeur et Joueur de CTF"
-    imageUrl: "/images/avatar.jpg"
+    imageUrl: "/images/avatar.png"
     buttons:
       - name: Blog
         url: "/posts"
@@ -65,7 +65,7 @@ params:
 
   label:
     text: "Wanako Blog"
-    icon: "/images/avatar.jpg"
+    icon: "/images/avatar.png"
     iconHeight: 35
 
   homeInfoParams:
