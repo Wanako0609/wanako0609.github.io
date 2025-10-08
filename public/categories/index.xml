@@ -11,8 +11,29 @@
     </image>
     <generator>Hugo -- 0.151.0</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 28 May 2025 16:25:48 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 07 Oct 2025 15:00:00 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CVE</title>
+      <link>http://localhost:1313/categories/cve/</link>
+      <pubDate>Tue, 07 Oct 2025 15:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/categories/cve/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hack the Box</title>
+      <link>http://localhost:1313/categories/hack-the-box/</link>
+      <pubDate>Tue, 07 Oct 2025 15:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/categories/hack-the-box/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Machine</title>
+      <link>http://localhost:1313/categories/machine/</link>
+      <pubDate>Tue, 07 Oct 2025 15:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/categories/machine/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Hardware</title>
       <link>http://localhost:1313/categories/hardware/</link>

