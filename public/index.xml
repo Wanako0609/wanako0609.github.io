@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.151.0</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Oct 2025 13:00:00 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hack The Box Soulmate</title>
+      <link>http://localhost:1313/posts/soulmate/</link>
+      <pubDate>Wed, 08 Oct 2025 13:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/soulmate/</guid>
+      <description>Write Up du challenge Soulmate</description>
+    </item>
     <item>
       <title>Mémo Commandes CTF</title>
       <link>http://localhost:1313/projets/memo_cmd/</link>
@@ -81,8 +88,9 @@
 &lt;li&gt;&lt;code&gt;pty.spawn()&lt;/code&gt; : spawne un pseudo-terminal&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;os.dup2()&lt;/code&gt; : duplique les descripteurs de fichiers&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;stabilisation-du-shell&#34;&gt;Stabilisation du Shell&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Méthode Python :&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;h3 id=&#34;reverse-shell---php&#34;&gt;Reverse Shell - php&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/pentestmonkey/php-reverse-shell&#34;&gt;https://github.com/pentestmonkey/php-reverse-shell&lt;/a&gt;
+wget &lt;a href=&#34;https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php&#34;&gt;https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hack The Box Artificial</title>

@@ -81,8 +81,9 @@
 &lt;li&gt;&lt;code&gt;pty.spawn()&lt;/code&gt; : spawne un pseudo-terminal&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;os.dup2()&lt;/code&gt; : duplique les descripteurs de fichiers&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;stabilisation-du-shell&#34;&gt;Stabilisation du Shell&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Méthode Python :&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;h3 id=&#34;reverse-shell---php&#34;&gt;Reverse Shell - php&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/pentestmonkey/php-reverse-shell&#34;&gt;https://github.com/pentestmonkey/php-reverse-shell&lt;/a&gt;
+wget &lt;a href=&#34;https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php&#34;&gt;https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>France Assembleur</title>

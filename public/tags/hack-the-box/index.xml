@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.151.0</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 07 Oct 2025 15:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 08 Oct 2025 13:00:00 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/hack-the-box/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hack The Box Soulmate</title>
+      <link>http://localhost:1313/posts/soulmate/</link>
+      <pubDate>Wed, 08 Oct 2025 13:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/soulmate/</guid>
+      <description>Write Up du challenge Soulmate</description>
+    </item>
     <item>
       <title>Hack The Box Artificial</title>
       <link>http://localhost:1313/posts/artificial/</link>
