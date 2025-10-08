@@ -9,7 +9,7 @@
       <url>http://localhost:1313/images/avatar.png</url>
       <link>http://localhost:1313/images/avatar.png</link>
     </image>
-    <generator>Hugo -- 0.147.8</generator>
+    <generator>Hugo -- 0.151.0</generator>
     <language>en</language>
     <lastBuildDate>Wed, 21 May 2025 11:49:29 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/programmation/index.xml" rel="self" type="application/rss+xml" />

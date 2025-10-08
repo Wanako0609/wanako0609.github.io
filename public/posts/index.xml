@@ -9,10 +9,31 @@
       <url>http://localhost:1313/images/avatar.png</url>
       <link>http://localhost:1313/images/avatar.png</link>
     </image>
-    <generator>Hugo -- 0.147.8</generator>
+    <generator>Hugo -- 0.151.0</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 28 May 2025 16:25:48 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 07 Oct 2025 15:00:00 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hack The Box Artificial</title>
+      <link>http://localhost:1313/posts/artificial/</link>
+      <pubDate>Tue, 07 Oct 2025 15:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/artificial/</guid>
+      <description>Write Up du challenge Artificial</description>
+    </item>
+    <item>
+      <title>Hack The Box Editor</title>
+      <link>http://localhost:1313/posts/editor/</link>
+      <pubDate>Tue, 07 Oct 2025 15:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/editor/</guid>
+      <description>Write Up du challenge Editor</description>
+    </item>
+    <item>
+      <title>Hack The Box Outbound</title>
+      <link>http://localhost:1313/posts/outbound/</link>
+      <pubDate>Tue, 07 Oct 2025 15:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/posts/outbound/</guid>
+      <description>Write Up du challenge OutBound</description>
+    </item>
     <item>
       <title>CTF InterIUT - ESPionnage</title>
       <link>http://localhost:1313/posts/espionnage/</link>
